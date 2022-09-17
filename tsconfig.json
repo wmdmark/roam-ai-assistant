@@ -1,0 +1,20 @@
+{
+  "extends": "./node_modules/roamjs-scripts/dist/default.tsconfig",
+  "include": ["src"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "lib": ["DOM"],
+    "noImplicitAny": false,
+    "isolatedModules": false,
+    "noUnusedLocals": true
+  },
+  "ts-node": {
+    // these options are overrides used only by ts-node
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
+}
